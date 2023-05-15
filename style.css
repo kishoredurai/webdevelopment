@@ -1,0 +1,37 @@
+div{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    background: rgb(217, 111, 111);
+    color: white;
+    transform: translateY(100px);
+    border: 1px solid black;
+    margin-top: 50px;  box-shadow: 2px 2px black;
+
+}
+
+.div-1{
+    transform:translateY(100px) translateX(10px) skewY(10deg);
+    background: rgb(217, 111, 111);
+    color: white;
+}
+
+.div-2{
+    transform:translateY(100px) translateX(50px) skewX(20deg) rotateY(10deg) translateY(-10px);
+    background: rgb(217, 111, 111);
+    color: white;
+}
+
+.div-3 {
+    background: rgb(217, 111, 111);
+    color: rgb(241, 238, 238);
+    transform: matrix(1, 0.5, -0.5,1,100,100);
+}
+
+.div-4 {
+    position: absolute;
+    background: rgb(217, 111, 111);
+    color: rgb(255, 241, 241);
+    transform:translateY(100px) translateX(180px) scale(1.2);
+    word-break:keep-all;
+}
