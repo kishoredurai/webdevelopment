@@ -1,37 +1,86 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  
-  h1 {
-    margin-top: 50px;
-  }
-  
-  #game {
-    margin-top: 50px;
-  }
-  
-  .selection {
-    margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 0 10px;
-  }
-  
-  #play-button {
-    font-size: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+body{
+    margin:0;
+    background-color: #B39C97;
+}
+.card-container {
+    width: 75%;
+    margin: 70px auto;
+    background-color: rgba(56, 53, 53, 0.904);
+    border-radius: 20px;
   }
   
   #result {
-    font-size: 24px;
-    margin-top: 20px;
+    text-align: center;
+  }
+
+  img {
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: zoom-in 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.01);
+    }
+  }
+
+
+  h1 {
+    color: rgb(222, 226, 228);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  button:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+
+  .scoreboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
   }
   
+  .player-score, .computer-score {
+    display: flex;
+    align-items: center;
+  }
+  
+  .player-score span, .computer-score span {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 600px) {
+    .scoreboard {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .player-score, .computer-score {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .option {
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
